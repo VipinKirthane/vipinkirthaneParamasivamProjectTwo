@@ -1,2 +1,19 @@
 @import "./setup";
 @import "./header";
+@import "./partOne";
+
+
+* {
+    margin:0;
+    padding:0;
+}
+
+.wrapper {
+    width:1200px;
+    max-width: 80%;
+    margin:0 auto;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+}

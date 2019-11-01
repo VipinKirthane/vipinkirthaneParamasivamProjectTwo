@@ -1,0 +1,12 @@
+.partOne {
+    background-color:#2B331B;
+    padding-top:150px;
+    display: flex;
+    flex-wrap:wrap;
+    height:550px;
+    .partOneParaOne, .partOneParaTwo, .partOneParaThree, .partOneParaFour {
+        width:calc(50%);
+    }
+
+}
+

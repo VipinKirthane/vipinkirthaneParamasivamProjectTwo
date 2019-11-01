@@ -179,21 +179,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.wrapper {
-  width: 1200px;
-  max-width: 80%;
-  margin: 0 auto;
-}
-
 header {
   background: url(../assets/home-header.jpg);
   background-repeat: none;
   height: 87vh;
+  position: relative;
 }
 
 h1 {
@@ -202,7 +192,8 @@ h1 {
   font-size: 69px;
   color: white;
   padding-top: 100px;
-  line-height: 20px;
+  line-height: 50px;
+  height: 200px;
 }
 
 h1 div {
@@ -210,6 +201,7 @@ h1 div {
   color: black;
   width: 470px;
   padding-top: 15px;
+  height: 70px;
 }
 
 ul {
@@ -224,6 +216,10 @@ ul {
           justify-content: space-evenly;
 }
 
+li a:first-child {
+  padding-left: 0;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -232,4 +228,42 @@ a {
   text-align: center;
   line-height: 29px;
   letter-spacing: 1px;
+  padding: 10px;
+}
+
+.topRightImage {
+  position: absolute;
+  right: 0;
+  top: 220px;
+  height: 580px;
+}
+
+.partOne {
+  background-color: #2B331B;
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 550px;
+}
+
+.partOne .partOneParaOne, .partOne .partOneParaTwo, .partOne .partOneParaThree, .partOne .partOneParaFour {
+  width: calc(50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1200px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
 }

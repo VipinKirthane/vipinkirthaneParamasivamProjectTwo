@@ -2,6 +2,7 @@ header {
     background:url(../assets/home-header.jpg);
     background-repeat: none;
     height:87vh;
+    position: relative;
 }
 
 h1 {
@@ -10,22 +11,27 @@ h1 {
     font-size: 69px;
     color:white;
     padding-top:100px;
-    line-height: 20px;
+    line-height: 50px;
+    height:200px;
     div {
         background-color: white;
         color:black;
         width:470px;
         padding-top:15px;
+        height:70px;
     }
 }
 
-ul  {
+ul {
     list-style: none;
     padding-top:50px;
     width:40%;
     display:flex;
     justify-content: space-evenly;
+}
 
+li a:first-child {
+    padding-left:0;
 }
 
 a {
@@ -36,4 +42,12 @@ a {
     text-align: center;
     line-height: 29px;
     letter-spacing: 1px;
+    padding:10px;
+}
+
+.topRightImage {
+    position: absolute;
+    right:0;
+    top:220px;
+    height:580px;
 }
