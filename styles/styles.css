@@ -182,7 +182,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 header {
   background: url(../assets/home-header.jpg);
   background-repeat: none;
-  height: 87vh;
+  height: 85vh;
   position: relative;
 }
 
@@ -211,12 +211,20 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-li a:first-child {
+ul li {
+  padding: 10px;
+}
+
+ul li:first-child {
+  padding-left: 0;
+}
+
+ul li:first-child a:first-child {
   padding-left: 0;
 }
 
@@ -240,17 +248,156 @@ a {
 
 .partOne {
   background-color: #2B331B;
-  padding-top: 150px;
+  padding-top: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 550px;
+  height: 900px;
 }
 
-.partOne .partOneParaOne, .partOne .partOneParaTwo, .partOne .partOneParaThree, .partOne .partOneParaFour {
-  width: calc(50%);
+.partOne .partOneParaOne,
+.partOne .partOneParaTwo,
+.partOne .partOneParaThree,
+.partOne .partOneParaFour {
+  width: calc(50% - 20px);
+  color: white;
+  display: inline-block;
+}
+
+.partOne .partOneParaOne p,
+.partOne .partOneParaTwo p,
+.partOne .partOneParaThree p,
+.partOne .partOneParaFour p {
+  line-height: 28px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.partOne .partOneParaOne div,
+.partOne .partOneParaTwo div,
+.partOne .partOneParaThree div,
+.partOne .partOneParaFour div {
+  width: calc(100% - 80px);
+  /*added padding & width assigned for icon */
+  display: inline-block;
+  padding: 10px;
+}
+
+.partOne .partOneParaOne i,
+.partOne .partOneParaTwo i,
+.partOne .partOneParaThree i,
+.partOne .partOneParaFour i {
+  display: inline-block;
+}
+
+.partOneParaTwo, .partOneParaFour {
+  margin-left: 20px;
+}
+
+.headerLocation,
+.headerCommunity,
+.headerBlog,
+.headerGetInTouch {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 45px;
+  line-height: 99.8px;
+}
+
+.fasPartOne {
+  background-color: #FFD300;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 30px;
+}
+
+.partTwo {
+  background-color: #171B0E;
+  padding-bottom: 150px;
+}
+
+.partTwo h3, .partTwo p {
+  color: white;
+}
+
+.partTwo .textPartRight,
+.partTwo .textPartLeft,
+.partTwo .imagePartLeft,
+.partTwo .imagePartRight {
+  width: 50%;
+}
+
+.partTwo h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  line-height: 58px;
+  letter-spacing: 1.3px;
+  padding-top: 100px;
+}
+
+.partTwo p {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+.imagePartLeft {
+  position: absolute;
+  top: -50px;
+  left: -140px;
+  -webkit-box-shadow: 130px 20px #FFD300;
+          box-shadow: 130px 20px #FFD300;
+}
+
+.imagePartRight {
+  position: absolute;
+  top: 130px;
+  right: -40px;
+  -webkit-box-shadow: -30px 30px #FFD300;
+          box-shadow: -30px 30px #FFD300;
+}
+
+.textPartLeft {
+  text-align: right;
+  padding: 10px;
+}
+
+.yellowButton {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 22.4px;
+  text-align: center;
+  line-height: 41.6px;
+  background-color: #FFD300;
+  padding: 15px 20px;
+}
+
+.yellowButton button {
+  border: none;
+  background-color: #FFD300;
+}
+
+.partTwoTop, .partTwoBottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.partTwoTop .textPartRight {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 650px;
+}
+
+.partThree {
+  height: 50vh;
 }
 
 * {

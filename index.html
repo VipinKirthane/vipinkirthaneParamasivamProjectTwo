@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/23a74f9e1a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/styles.css">
     <title>The Restaurant Mall</title>
 </head>
@@ -23,55 +24,71 @@
         <img class="topRightImage" src="./assets/home-box-header.png" alt="">
     </header>
 
-    <main class="">
+    <main>
         <section>
             <div class="partOne">
                 <div class="wrapper">
                     <div class="partOneParaOne">
-                        <h2>LOCATION</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi natus repudiandae similique dolorem, laboriosam fugit nobis, eius exercitationem unde quasi reiciendis odit ducimus, sequi doloremque.</p>
+                        <i class="fas fa-map-marker-alt fasPartOne"></i>
+                        <div>
+                            <h2 class="headerLocation">LOCATION</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi natus repudiandae similique dolorem, laboriosam fugit nobis, eius exercitationem unde quasi reiciendis odit ducimus, sequi doloremque.</p>
+                        </div>
                     </div>
                     <div class="partOneParaTwo">
-                        <h2>COMMUNITY</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi natus repudiandae similique dolorem, laboriosam fugit nobis, eius exercitationem unde quasi reiciendis odit ducimus, sequi doloremque.</p>
+                        <i class="fas fa-users fasPartOne"></i>
+                        <div>
+                            <h2 class="headerCommunity">COMMUNITY</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi natus repudiandae similique dolorem, laboriosam fugit nobis, eius exercitationem unde quasi reiciendis odit ducimus, sequi doloremque.</p>
+                        </div>
                     </div>
                     <div class="partOneParaThree">
-                        <h2>BLOG</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi natus repudiandae similique dolorem, laboriosam fugit nobis, eius exercitationem unde quasi reiciendis odit ducimus, sequi doloremque.</p>
+                        <i class="fas fa-file fasPartOne"></i>
+                        <div>
+                            <h2 class="headerBlog">BLOG</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi natus repudiandae similique dolorem, laboriosam fugit nobis, eius exercitationem unde quasi reiciendis odit ducimus, sequi doloremque.</p>
+                        </div>
                     </div>
                     <div class="partOneParaFour">
-                        <h2>GET IN TOUCH</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi natus repudiandae similique dolorem, laboriosam fugit nobis, eius exercitationem unde quasi reiciendis odit ducimus, sequi doloremque.</p>
+                        <i class="fas fa-phone fasPartOne"></i>
+                        <div>
+                            <h2 class="headerGetInTouch">GET IN TOUCH</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi natus repudiandae similique dolorem, laboriosam fugit nobis, eius exercitationem unde quasi reiciendis odit ducimus, sequi doloremque.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="partTwo">
-            <div>
-                <div class="textPartRight">
-                    <h3>BEST BURGERS</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repudiandae tempora iure. Id laudantium beatae repudiandae! Neque nobis voluptatum modi!</p>
-                    <button>READ MORE</button>
-                </div>
-                <div class="imagePartLeft">
-                    <img src="" alt="">
+            <div class="wrapper">
+                <div class="partTwoTop">
+                    <div class="imagePartLeft">
+                        <img src="./assets/left-image.jpg" alt="">
+                    </div>
+                    <div class="textPartRight">
+                        <h3>BEST BURGERS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repudiandae tempora iure. Id laudantium beatae repudiandae! Neque nobis voluptatum modi!</p>
+                        <a href="#" class="yellowButton"><button>READ MORE</button></a>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="textPartLeft">
-                    <h3>TRY SOMETHING NEW</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus quod quos alias delectus rem, fugit totam dolore exercitationem dolorem ipsum!</p>
-                    <button>READ MORE</button>
-                </div>
-                <div class="imagePartRight">
-                    <img src="" alt="">
+            <div class="wrapper">
+                <div class="partTwoBottom">
+                    <div class="textPartLeft">
+                        <h3>TRY SOMETHING NEW</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus quod quos alias delectus rem, fugit totam dolore exercitationem dolorem ipsum!</p>
+                        <a href="#" class="yellowButton"><button>READ MORE</button></a>
+                    </div>
+                    <div class="imagePartRight">
+                        <img src="./assets/right-image.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="partThree">
-            <div>
+            <div class="wrapper">
                 <h2>WIN A $100 GIFT CARD</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam rem expedita facilis tempore quos totam minima. Consequatur dolor nulla earum. Excepturi facere nemo illum deleniti, rem commodi placeat libero praesentium reiciendis consequatur veniam eos repudiandae, incidunt aut error cum!</p>
                 <button>FIND OUT MORE</button>
@@ -79,13 +96,18 @@
             <div>
                 <img src="" alt="">
             </div>
+        </section>
+
+        <section class="partFour">
             <div>
                 <div class="smallImageLeftHalf">
                     <img src="" alt="">
                 </div>
                 <div>
                     <h2>BRINGING NATURE IN SPACES</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi iste non accusamus minima deleniti dolores quisquam impedit temporibus omnis, illum ratione aperiam dolorem natus quibusdam harum tempora, tenetur voluptatibus ab odit aspernatur doloremque. Omnis nobis doloribus odio? Perspiciatis, neque totam.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi iste non accusamus minima deleniti dolores
+                        quisquam impedit temporibus omnis, illum ratione aperiam dolorem natus quibusdam harum tempora, tenetur
+                        voluptatibus ab odit aspernatur doloremque. Omnis nobis doloribus odio? Perspiciatis, neque totam.</p>
                     <button>FIND OUT MORE</button>
                 </div>
             </div>
@@ -104,3 +126,6 @@
     </footer>
 </body>
 </html>
+
+
+<!-- Enter alt text -->

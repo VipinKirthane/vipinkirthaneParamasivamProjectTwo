@@ -1,7 +1,7 @@
 header {
     background:url(../assets/home-header.jpg);
     background-repeat: none;
-    height:87vh;
+    height:85vh;
     position: relative;
 }
 
@@ -27,12 +27,19 @@ ul {
     padding-top:50px;
     width:40%;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    li {
+        padding:10px;
+    }
 }
 
-li a:first-child {
+ul li:first-child {
     padding-left:0;
+        a:first-child {
+            padding-left:0;
+        }
 }
+
 
 a {
     color:white;

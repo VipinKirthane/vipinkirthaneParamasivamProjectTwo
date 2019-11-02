@@ -1,12 +1,52 @@
 .partOne {
     background-color:#2B331B;
-    padding-top:150px;
+    padding-top:250px;
     display: flex;
     flex-wrap:wrap;
-    height:550px;
-    .partOneParaOne, .partOneParaTwo, .partOneParaThree, .partOneParaFour {
-        width:calc(50%);
+    height:900px;
+    .partOneParaOne, 
+    .partOneParaTwo, 
+    .partOneParaThree, 
+    .partOneParaFour {
+        width:calc(50% - 20px);
+        color:white;
+        display: inline-block;
+        p {
+            line-height: 28px;
+            letter-spacing: 1px;
+            width:100%;
+        }
+        div {
+            width:calc(100% - 80px);   /*added padding & width assigned for icon */
+            display: inline-block;
+            padding:10px;
+        }
+        i {
+            display: inline-block;
+        }
     }
-
 }
 
+.partOneParaTwo, .partOneParaFour {
+    margin-left:20px;
+}
+
+.headerLocation, 
+.headerCommunity, 
+.headerBlog, 
+.headerGetInTouch {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 45px;
+    line-height:99.8px;
+}
+
+.fasPartOne {
+    background-color:#FFD300;
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    color:black;
+    text-align: center;
+    padding-top:15px;
+    font-size:30px;
+}
