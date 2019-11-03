@@ -303,7 +303,8 @@ a:hover::after {
   display: inline-block;
 }
 
-.partOneParaTwo, .partOneParaFour {
+.partOneParaTwo,
+.partOneParaFour {
   margin-left: 20px;
 }
 
@@ -444,7 +445,8 @@ a:hover::after {
   color: white;
 }
 
-.partThreeWin, .partFourBringing {
+.partThreeWin,
+.partFourBringing {
   color: #FFD300;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 45px;
@@ -548,6 +550,160 @@ footer {
   background-repeat: none;
   height: 70vh;
   position: relative;
+}
+
+.contactMain {
+  background-color: #2B331B;
+  position: relative;
+  height: 60vh;
+}
+
+.contactSocialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.contactSocialIcons i {
+  color: #FFD300;
+}
+
+.contactList {
+  /* does this do anything? */
+  list-style: none;
+  padding-top: 50px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contactList li {
+  padding: 10px;
+}
+
+.contactInfoLeft {
+  padding-left: 60px;
+  padding-top: 120px;
+}
+
+.asideAndSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fabContact {
+  color: black;
+}
+
+.contactInfoList {
+  list-style: none;
+}
+
+.socialIcons {
+  list-style: none;
+}
+
+.socialIcons li:first-child {
+  padding-left: 10px;
+}
+
+.contactSocialIcons a i {
+  font-size: 25px;
+}
+
+.contactFormRight {
+  height: 400px;
+  width: 800px;
+  -webkit-box-shadow: 20px 20px #FFD300;
+          box-shadow: 20px 20px #FFD300;
+  position: absolute;
+  top: -150px;
+  right: 40px;
+}
+
+label {
+  visibility: hidden;
+  font-size: 1px;
+}
+
+.contactName,
+.contactEmail {
+  display: inline-block;
+}
+
+.contactName input,
+.contactEmail input {
+  width: 290px;
+  height: 40px;
+  border: none;
+  border-bottom: 4px solid #FFD300;
+  background-color: #161A10;
+  color: white;
+}
+
+.contactInfoEmail,
+.contactInfoList {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+.contactInfoEmail {
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.contactInfoList li {
+  padding-bottom: 5px;
+  font-family: 'Barlow', sans-serif;
+}
+
+.contactMessage {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.contactMessage input {
+  width: 100%;
+  height: 200px;
+  border: 4px solid #FFD300;
+  background-color: #161A10;
+  color: white;
+}
+
+.contactNameAndEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.submitButton {
+  height: 20px;
+}
+
+.submitButton button {
+  border: none;
+  padding: 15px 300px;
+  background-color: #FFD300;
+}
+
+a.submitButton {
+  padding-left: 0;
+}
+
+.contactFormRight fieldset {
+  border: none;
+  background-color: #161A10;
 }
 
 * {
