@@ -22,28 +22,105 @@
         <h1 class="wrapper">BLOG</h1>
     </header>
 
-    <main>
-        <aside class="blogAside">
-            <div>
-                <img src="assets/blog-side-image.jpg" alt="">
-            </div>
-            <div class="asideTextPart">
-                <div>
-                    <h4>FEATURED RESTAURANTS</h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, voluptatem? Beatae praesentium eius nulla molestiae.</p>
+    <main class="">
+        <div class="blogMain">
+            <aside class="blogAside">
+                <div class="blogAsideImgDiv">
+                    <img src="assets/blog-side-image.jpg" alt="">
                 </div>
-                <div>
-                    <h4>RECENT POSTS</h4>
-                    <ul class="blogListAside">
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                    </ul>
+                <div class="asideTextPart">
+                    <div>
+                        <h4 class="blogHeaderFour">FEATURED RESTAURANTS</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, voluptatem? Beatae praesentium eius nulla molestiae.</p>
+                    </div>
+                    <div>
+                        <h4 class="blogHeaderFour">RECENT POSTS</h4>
+                        <ul class="blogListAside">
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Lorem ipsum dolor sit.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </aside>
+            </aside>
+    
+            <section class="blogImageAndTextPart">
+                <img class="blogImageRight" src="./assets/blog-post-image.jpg" alt="">
+                <div class="blogTextPart wrapper">
+                    <h2>EMPLOYMENT OPPORTUNITIES</h2>
+                    <p class="blogPartSubtitle">Monday October 30, 2019 by Sulaire</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet nisi ultrices, malesuada lacus id, commodo mi.
+                    Suspendisse nunc erat, fermentum faucibus velit vel, rhoncus volutpat ligula. Praesent iaculis orci nisl, et varius
+                    magna imperdiet a. Donec porttitor, justo et rhoncus consequat, leo risus facilisis neque, eu varius ante magna a orci.
+                    Duis ac risus nec lorem sagittis interdum. Etiam mattis tellus eros, a tincidunt massa varius at. Maecenas varius
+                    convallis sem vitae rhoncus. Donec eget metus sit amet tellus tincidunt auctor vitae ut augue. Nam a nisl purus.
+                    Suspendisse eros ex, laoreet non rutrum ut, consectetur sed eros. Duis sagittis sodales mi sed faucibus. Aliquam at
+                    maximus ipsum, eu euismod mi.</p>
+                    
+                    <p>Nunc fringilla neque ligula, at venenatis leo varius a. Aliquam ut purus metus. Curabitur sit amet luctus elit, in
+                    lobortis tortor. Aenean porttitor scelerisque ante a lobortis. Integer lacus leo, rhoncus at turpis nec, vehicula congue
+                    dui. Mauris sollicitudin luctus quam, ac hendrerit magna mollis sit amet.</p>
+                    
+                    <p>Sed id elementum sem, nec aliquam ex. Curabitur pellentesque eget mauris a efficitur. In purus diam, ultrices a enim
+                    nec, tristique interdum leo. Integer ultrices neque lacus, vitae interdum diam suscipit sit amet. Sed egestas lorem mi,
+                    eget laoreet nibh consequat eu. Donec pulvinar tellus eu est efficitur, vel aliquet dui porta. Duis mauris mauris,
+                    imperdiet a rhoncus et, pharetra a lorem. Proin posuere venenatis orci, ac accumsan felis mollis in.</p>
+                    
+                    <p>Donec tristique id ipsum a placerat. Nulla suscipit nibh leo, non efficitur elit efficitur at. Aliquam a turpis ac massa
+                    posuere aliquet vitae at ex. Fusce in dui vel risus consectetur congue. In interdum imperdiet ligula, id iaculis risus
+                    viverra ac. Donec sit amet eros a massa posuere dignissim.</p>
+                </div>
+    
+                <div class="blogComment">
+                    <h2 class="wrapper">COMMENTS</h2>
+    
+                    <div class="blogCommentFull1">
+                        <div class="profilePic1">
+                            <img src="./assets/comment-1.jpg" alt="">
+                        </div>
+                        <div class="blogCommentTextPart1 wrapper">
+                            <h3>Tuesday October 9th, 2019 by Ali</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum minima voluptas molestiae cumque laudantium
+                                blanditiis ab! Iusto perferendis quisquam, tenetur excepturi, porro doloribus aperiam fugit quod odio odit
+                                molestias unde!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="blogCommentFull2">
+                        <div class="profilePic2">
+                            <img src="./assets/comment-2.jpg" alt="">
+                        </div>
+                        <div class="blogCommentTextPart2 wrapper">
+                            <h3>Wednesday October 10th, 2019 by Lisa</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tenetur error nesciunt ab. Aliquam neque sunt,
+                                porro laudantium quidem odit!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
+        
+        <section class="blogContactFormRight">
+            <fieldset class="wrapper">
+                <div class="blogContactNameAndEmail">
+                    <div class="blogContactName">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div class="blogContactEmail">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                    </div>
+                </div>
+                <div class="blogContactMessage">
+                    <label for="message">Comment</label>
+                    <input type="text" id="message" name="message" placeholder="Comment">
+                </div>
+                <a href="#" class="postCommentButton"><button>POST COMMENT</button></a>
+            </fieldset>
+        </section>
     </main>
 
     <footer class="">
