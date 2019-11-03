@@ -1,0 +1,35 @@
+.partFour {
+    height:80vh;
+    background-color:#2B331B;
+    margin-top:400px;
+    p {
+        color:white;
+        font-size:20px;
+        line-height: 28px;
+        letter-spacing: 1px;
+        margin-bottom:50px;
+    }
+    .smallImageLeftHalf {
+        width:20%;
+        padding-top:150px;
+        img {
+            box-shadow: -25px 25px #FFD300;
+        }
+    }
+}
+
+.partFourTextSection {
+    width:80%;
+    h2 {
+        margin-left:15%;
+    }
+    p {
+        width:70%;
+        margin-left:20%;
+    }
+}
+
+.partFourImageAndText {
+    display:flex;
+    margin-left:400px;
+}
