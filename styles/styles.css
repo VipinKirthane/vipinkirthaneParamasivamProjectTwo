@@ -204,7 +204,7 @@ h1 div {
   height: 70px;
 }
 
-ul {
+.homeList {
   list-style: none;
   padding-top: 50px;
   width: 40%;
@@ -216,7 +216,7 @@ ul {
           justify-content: flex-start;
 }
 
-ul li {
+.homeList li {
   padding: 10px;
 }
 
@@ -520,6 +520,34 @@ footer {
 .footerImages img {
   width: calc(100% - 20px);
   padding-bottom: 40px;
+}
+
+.blogHeader {
+  background: url(/assets/blog-header.jpg);
+  height: 80vh;
+}
+
+.blogList {
+  list-style: none;
+  padding-top: 50px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.blogList li {
+  padding: 10px;
+}
+
+.contactHeader {
+  background: url(/assets/contact-header.jpg);
+  background-repeat: none;
+  height: 70vh;
+  position: relative;
 }
 
 * {
