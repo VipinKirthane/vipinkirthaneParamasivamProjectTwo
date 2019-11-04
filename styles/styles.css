@@ -202,6 +202,8 @@ h1 div {
   width: 470px;
   padding-top: 15px;
   height: 70px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .homeList {
@@ -255,6 +257,45 @@ nav a:hover::after {
   right: 0;
   top: 220px;
   height: 580px;
+}
+
+@media (max-width: 1260px) {
+  .topRightImage {
+    height: 480px;
+  }
+  h1 {
+    font-size: 55px;
+    line-height: 40px;
+  }
+  h1 div {
+    width: 380px;
+    padding-top: 10px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .topRightImage {
+    height: 400px;
+    top: 400px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  h1 div {
+    width: 310px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topRightImage {
+    width: 100%;
+    height: auto;
+    top: 480px;
+  }
+  .homeList {
+    visibility: hidden;
+  }
 }
 
 .partOne {
@@ -326,6 +367,52 @@ nav a:hover::after {
   text-align: center;
   padding-top: 15px;
   font-size: 30px;
+}
+
+@media (max-width: 1190px) {
+  .headerGetInTouch {
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .wrapper {
+    max-width: 1080px;
+    width: 80%;
+  }
+  .headerGetInTouch {
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .partOne {
+    height: auto;
+    display: block;
+  }
+  .partOne .partOneParaOne,
+  .partOne .partOneParaTwo,
+  .partOne .partOneParaThree,
+  .partOne .partOneParaFour {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+  .partOne h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    max-width: 480px;
+    width: 90%;
+  }
+  .partOne h2 {
+    font-size: 33px;
+  }
 }
 
 .partTwo {
@@ -400,13 +487,6 @@ nav a:hover::after {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-}
-
-.partTwoTop .textPartRight {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-left: 650px;
 }
 
 .partThree {
@@ -930,8 +1010,8 @@ a.submitButton {
 }
 
 .wrapper {
-  width: 1200px;
-  max-width: 80%;
+  max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
 }
 

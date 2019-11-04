@@ -14,14 +14,21 @@
 * {
     margin:0;
     padding:0;
+    // border:1px solid crimson;
 }
 
 .wrapper {
-    width:1200px;
-    max-width: 80%;
+    max-width:1200px;
+    width: 80%;
     margin:0 auto;
 }
 
 p {
     font-family: 'Barlow', sans-serif;
+}
+
+@media (max-width:1080px) {
+    .wrapper {
+        
+    }
 }

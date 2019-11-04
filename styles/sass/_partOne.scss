@@ -51,3 +51,58 @@
     padding-top:15px;
     font-size:30px;
 }
+
+
+// Media Query Starts
+@media (max-width:1190px) {
+    .headerGetInTouch {
+        line-height:50px;
+    }
+}
+
+@media (max-width:1080px) {
+    .wrapper {
+        max-width:1080px;
+        width:80%;
+    }
+
+    .headerGetInTouch {
+        line-height:50px;
+    }
+
+}
+
+@media (max-width:800px) {
+    .partOne {
+        height:auto;
+        display:block;
+        .partOneParaOne,
+        .partOneParaTwo,
+        .partOneParaThree,
+        .partOneParaFour {
+            display:block;
+            width:100%;
+            margin-bottom:50px;
+            margin-left:0;
+        }
+        h2 {
+            font-size:40px;
+            line-height:50px;
+        }
+    }
+}
+
+
+@media (max-width:480px) {
+    .wrapper {
+        max-width:480px;
+        width:90%;
+    }
+
+    .partOne {
+        h2 {
+            font-size:33px;
+        }        
+    }
+    
+} 

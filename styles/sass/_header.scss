@@ -19,6 +19,8 @@ h1 {
         width:470px;
         padding-top:15px;
         height:70px;
+        margin-top:15px;
+        margin-bottom:15px;
     }
 }
 
@@ -68,4 +70,51 @@ nav a:hover::after {
     right:0;
     top:220px;
     height:580px;
+}
+
+
+// Media Query Start
+
+@media (max-width:1260px) {
+    .topRightImage {
+        height:480px;
+    }
+
+    h1 {
+        font-size: 55px;
+        line-height: 40px;
+        div {
+            width:380px;
+            padding-top:10px;
+            height:60px;
+        }
+    }
+}
+
+@media (max-width:1080px) {
+    .topRightImage {
+        height:400px;
+        top:400px;
+    }
+
+    h1 {
+        font-size: 45px;
+        div {
+            width:310px;
+        }
+    }
+
+}
+
+@media (max-width:480px) {
+    .topRightImage {
+        width:100%;
+        height:auto;
+        top:480px;
+    }
+
+    .homeList {
+        visibility: hidden;
+    }
+
 }
