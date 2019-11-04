@@ -5,16 +5,19 @@
 @import "./partThree";
 @import "./partFour";
 @import "./footer";
-
 @import "./blogHeader";
 @import "./blogMain";
-
+@import "./blogAside";
 @import "./contactHeader";
 
 * {
     margin:0;
     padding:0;
     // border:1px solid crimson;
+}
+
+img {
+    // width:100%
 }
 
 .wrapper {

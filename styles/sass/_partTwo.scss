@@ -26,22 +26,31 @@
 }
 
 .imagePartLeft {
-    position: absolute;
+    position: relative;
     top:-50px;
-    left:-140px;
-    box-shadow: 130px 20px #FFD300;
+    width:100%;
+    img {
+        width:100%;
+        box-shadow: 30px 20px #FFD300;
+    }
 }
 
 .imagePartRight {
-    position: absolute;
-    top:130px;
-    right:-40px;
-    box-shadow: -30px 30px #FFD300;
+    position: relative;
+    bottom:-200px;
+    right:0px;
+    display:flex;
+    align-items:flex-end;
+    img {
+        width:100%;
+        box-shadow: -30px 30px #FFD300;
+    }
 }
 
 .textPartLeft {
     text-align: right;
     padding:10px;
+    margin-right:50px;
 }
 
 .yellowButton {
@@ -64,7 +73,8 @@
 }
 
 .partTwoTop .textPartRight {
-    // justify-content: flex-end;
+    justify-content: flex-end;
+    margin-left:50px;
     // margin-left:650px;
 }
 

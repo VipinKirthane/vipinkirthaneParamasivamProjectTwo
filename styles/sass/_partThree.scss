@@ -1,5 +1,4 @@
 .partThree {
-    height:80vh;
     background-color:#2B331B;
     img {
         width:100%;
@@ -23,12 +22,20 @@
     text-align: center;
     line-height:41.6px;
     padding:15px 20px;
-    margin-left:40%;
     button {
         border:none;
         background-color: #0F0F0F; 
         color:white;
     }
+}
+
+.partThree .blackButton, .partFour .blackButton {
+    margin-left:0;
+    margin:0 auto;
+}
+
+.partThreeButton, .partFourButton  {
+    text-align: center;
 }
 
 .partThreeWin, 

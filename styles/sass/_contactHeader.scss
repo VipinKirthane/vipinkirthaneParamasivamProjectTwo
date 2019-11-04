@@ -1,5 +1,5 @@
 .contactHeader {
-    background:url(/assets/contact-header.jpg);
+    background:url(../assets/contact-header.jpg);
     background-repeat: none;
     height:70vh;
     position: relative;
@@ -8,7 +8,7 @@
 .contactMain {
     background-color:#2B331B;
     position:relative;
-    height:60vh;
+    height:450px;
 }
 
 .contactSocialIcons {
@@ -141,4 +141,49 @@ a.submitButton {
 .contactFormRight fieldset {
     border:none;
     background-color:#161A10;
+}
+
+
+@media (max-width:1260px) {
+    .contactFormRight {
+        height:400px;
+        width:800px;
+        box-shadow: 10px 10px #FFD300;
+        position: absolute;
+        top:-60px;
+        right:40px;
+        fieldset {
+            padding:30px 40px 20px 30px;
+            margin-right:0;
+        }
+    }
+
+
+    .contactInfoLeft {
+        padding-top:260px;
+    }
+}
+
+@media (max-width:1120px) {
+    .contactFormRight {
+        height:400px;
+        width:600px;
+        box-shadow: 10px 10px #FFD300;
+        position: absolute;
+        top:-160px;
+        right:40px;
+        fieldset {
+            margin-right:0;
+        }
+    }
+    
+    .submitButton {
+        button {
+            padding:15px 250px;
+        }
+    }
+
+    .contactInfoLeft {
+        padding-top:300px;
+    }
 }

@@ -1,6 +1,6 @@
 .partOne {
-    background-color:#2B331B;
-    padding-top:250px;
+    
+    padding-top:150px;
     display: flex;
     flex-wrap:wrap;
     height:900px;
@@ -8,28 +8,44 @@
     .partOneParaTwo, 
     .partOneParaThree, 
     .partOneParaFour {
-        width:calc(50% - 20px);
+        // width:calc(50% - 20px);
+        width:50%;
         color:white;
-        display: inline-block;
+        display:flex;
+        // justify-content: center;
+        // display: inline-block;
         p {
             line-height: 28px;
             letter-spacing: 1px;
             width:100%;
         }
         div {
-            width:calc(100% - 80px);   /*added padding & width assigned for icon */
-            display: inline-block;
+            // display: inline-block;
             padding:10px;
         }
         i {
-            display: inline-block;
+            // display: inline-block;
         }
     }
 }
 
+.partOneSection {
+    background-color:#2B331B;
+}
+
 .partOneParaTwo, 
 .partOneParaFour {
-    margin-left:20px;
+    // margin-left:20px;
+}
+
+.partOneTextPart {
+    width:100%;
+}
+
+.partOneIcons {
+    // display:flex;
+    // align-content:flex-start;
+    margin-top:20px;
 }
 
 .headerLocation, 

@@ -299,8 +299,7 @@ nav a:hover::after {
 }
 
 .partOne {
-  background-color: #2B331B;
-  padding-top: 250px;
+  padding-top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,9 +312,11 @@ nav a:hover::after {
 .partOne .partOneParaTwo,
 .partOne .partOneParaThree,
 .partOne .partOneParaFour {
-  width: calc(50% - 20px);
+  width: 50%;
   color: white;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .partOne .partOneParaOne p,
@@ -331,22 +332,19 @@ nav a:hover::after {
 .partOne .partOneParaTwo div,
 .partOne .partOneParaThree div,
 .partOne .partOneParaFour div {
-  width: calc(100% - 80px);
-  /*added padding & width assigned for icon */
-  display: inline-block;
   padding: 10px;
 }
 
-.partOne .partOneParaOne i,
-.partOne .partOneParaTwo i,
-.partOne .partOneParaThree i,
-.partOne .partOneParaFour i {
-  display: inline-block;
+.partOneSection {
+  background-color: #2B331B;
 }
 
-.partOneParaTwo,
-.partOneParaFour {
-  margin-left: 20px;
+.partOneTextPart {
+  width: 100%;
+}
+
+.partOneIcons {
+  margin-top: 20px;
 }
 
 .headerLocation,
@@ -447,17 +445,31 @@ nav a:hover::after {
 }
 
 .imagePartLeft {
-  position: absolute;
+  position: relative;
   top: -50px;
-  left: -140px;
-  -webkit-box-shadow: 130px 20px #FFD300;
-          box-shadow: 130px 20px #FFD300;
+  width: 100%;
+}
+
+.imagePartLeft img {
+  width: 100%;
+  -webkit-box-shadow: 30px 20px #FFD300;
+          box-shadow: 30px 20px #FFD300;
 }
 
 .imagePartRight {
-  position: absolute;
-  top: 130px;
-  right: -40px;
+  position: relative;
+  bottom: -200px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.imagePartRight img {
+  width: 100%;
   -webkit-box-shadow: -30px 30px #FFD300;
           box-shadow: -30px 30px #FFD300;
 }
@@ -465,6 +477,7 @@ nav a:hover::after {
 .textPartLeft {
   text-align: right;
   padding: 10px;
+  margin-right: 50px;
 }
 
 .yellowButton {
@@ -489,8 +502,14 @@ nav a:hover::after {
   position: relative;
 }
 
+.partTwoTop .textPartRight {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 50px;
+}
+
 .partThree {
-  height: 80vh;
   background-color: #2B331B;
 }
 
@@ -516,13 +535,21 @@ nav a:hover::after {
   text-align: center;
   line-height: 41.6px;
   padding: 15px 20px;
-  margin-left: 40%;
 }
 
 .blackButton button {
   border: none;
   background-color: #0F0F0F;
   color: white;
+}
+
+.partThree .blackButton, .partFour .blackButton {
+  margin-left: 0;
+  margin: 0 auto;
+}
+
+.partThreeButton, .partFourButton {
+  text-align: center;
 }
 
 .partThreeWin,
@@ -538,7 +565,6 @@ nav a:hover::after {
 .partFour {
   height: 80vh;
   background-color: #2B331B;
-  margin-top: 400px;
 }
 
 .partFour p {
@@ -568,7 +594,6 @@ nav a:hover::after {
 }
 
 .partFourTextSection p {
-  width: 70%;
   margin-left: 20%;
 }
 
@@ -600,12 +625,17 @@ footer {
 }
 
 .footerImages img {
-  width: calc(100% - 20px);
   padding-bottom: 40px;
+  width: 100%;
+}
+
+.footerImage2 {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .blogHeader {
-  background: url(/assets/blog-header.jpg);
+  background: url(../assets/blog-header.jpg);
   height: 80vh;
 }
 
@@ -685,7 +715,7 @@ footer {
   width: 74%;
   border-left: 5px solid #FFD300;
   border-bottom: 5px solid #FFD300;
-  padding: 550px 0 50px 80px;
+  padding: 550px 0 50px 10px;
   margin-right: 0;
 }
 
@@ -712,7 +742,7 @@ footer {
   width: 900px;
   position: absolute;
   top: -80px;
-  right: 0px;
+  right: -80px;
   -webkit-box-shadow: -20px 20px #FFD300;
           box-shadow: -20px 20px #FFD300;
 }
@@ -774,7 +804,6 @@ footer {
 
 .blogContactFormRight fieldset {
   width: 500px;
-  padding-left: 500px;
   background-color: #2B331B;
 }
 
@@ -837,8 +866,21 @@ label {
   background-color: #2B331B;
 }
 
+.blogListAside ul {
+  list-style-type: square;
+}
+
+.asideTextPart div p {
+  width: 100%;
+  display: inline-block;
+}
+
+.blogAside {
+  width: 24%;
+}
+
 .contactHeader {
-  background: url(/assets/contact-header.jpg);
+  background: url(../assets/contact-header.jpg);
   background-repeat: none;
   height: 70vh;
   position: relative;
@@ -847,7 +889,7 @@ label {
 .contactMain {
   background-color: #2B331B;
   position: relative;
-  height: 60vh;
+  height: 450px;
 }
 
 .contactSocialIcons {
@@ -1002,6 +1044,46 @@ a.submitButton {
 .contactFormRight fieldset {
   border: none;
   background-color: #161A10;
+}
+
+@media (max-width: 1260px) {
+  .contactFormRight {
+    height: 400px;
+    width: 800px;
+    -webkit-box-shadow: 10px 10px #FFD300;
+            box-shadow: 10px 10px #FFD300;
+    position: absolute;
+    top: -60px;
+    right: 40px;
+  }
+  .contactFormRight fieldset {
+    padding: 30px 40px 20px 30px;
+    margin-right: 0;
+  }
+  .contactInfoLeft {
+    padding-top: 260px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .contactFormRight {
+    height: 400px;
+    width: 600px;
+    -webkit-box-shadow: 10px 10px #FFD300;
+            box-shadow: 10px 10px #FFD300;
+    position: absolute;
+    top: -160px;
+    right: 40px;
+  }
+  .contactFormRight fieldset {
+    margin-right: 0;
+  }
+  .submitButton button {
+    padding: 15px 250px;
+  }
+  .contactInfoLeft {
+    padding-top: 300px;
+  }
 }
 
 * {
