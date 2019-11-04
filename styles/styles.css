@@ -738,10 +738,9 @@ footer {
 }
 
 .blogImageRight {
-  width: 900px;
+  width: 100%;
   position: relative;
   top: -80px;
-  right: 0px;
   -webkit-box-shadow: -20px 20px #FFD300;
           box-shadow: -20px 20px #FFD300;
 }
@@ -780,12 +779,16 @@ footer {
   display: flex;
   width: 90%;
   padding: 20px;
-  margin-left: 80px;
+  padding-left: 0;
+}
+
+.blogCommentFull1 img,
+.blogCommentFull2 img {
+  padding-right: 20px;
 }
 
 .blogComment {
   padding-top: 50px;
-  padding-left: 80px;
 }
 
 .blogComment h2 {
@@ -797,13 +800,18 @@ footer {
 
 .blogContactFormRight {
   height: 400px;
-  -webkit-box-shadow: 20px 20px #FFD300;
-          box-shadow: 20px 20px #FFD300;
   background-color: #2B331B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .blogContactFormRight fieldset {
-  width: 500px;
+  width: 50%;
+  margin-right: 100px;
   background-color: #2B331B;
 }
 
@@ -856,7 +864,7 @@ label {
 .postCommentButton button {
   border: none;
   height: 40px;
-  width: 600px;
+  width: 100%;
   background-color: #FFD300;
   display: block;
 }
@@ -1047,6 +1055,26 @@ a.submitButton {
   background-color: #161A10;
 }
 
+input[type="email"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+input[type="email"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+input[type="email"]::-ms-input-placeholder, input[type="text"]::-ms-input-placeholder {
+  color: white;
+  opacity: 1;
+}
+
+input[type="email"]::placeholder, input[type="text"]::placeholder {
+  color: white;
+  opacity: 1;
+}
+
 @media (max-width: 1260px) {
   .contactFormRight {
     height: 400px;
@@ -1090,7 +1118,6 @@ a.submitButton {
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid crimson;
 }
 
 .wrapper {

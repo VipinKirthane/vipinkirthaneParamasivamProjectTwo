@@ -143,6 +143,10 @@ a.submitButton {
     background-color:#161A10;
 }
 
+input[type="email"]::placeholder, input[type="text"]::placeholder {
+    color:rgb(255,255,255);
+    opacity:1;
+}
 
 @media (max-width:1260px) {
     .contactFormRight {
