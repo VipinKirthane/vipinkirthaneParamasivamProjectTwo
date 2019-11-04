@@ -53,7 +53,7 @@ a {
     // transition: ease-in-out 0.9s;
 }
 
-a:hover::after {
+nav a:hover::after {
     content:"";
     background-color:#FFD300;
     width:100%;

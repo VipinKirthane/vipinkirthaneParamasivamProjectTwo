@@ -31,7 +31,6 @@
 }
 
 .contactInfoLeft {
-    padding-left:60px;
     padding-top:120px;
 }
 
@@ -63,8 +62,12 @@
     width:800px;
     box-shadow: 20px 20px #FFD300;
     position: absolute;
-    top:-150px;
+    top:-130px;
     right:40px;
+    fieldset {
+        padding:30px 40px 20px 30px;
+        margin-right:0;
+    }
 }
 
 label {
@@ -111,6 +114,8 @@ label {
         border: 4px solid #FFD300;
         background-color:#161A10;
         color:white;
+        padding-bottom:120px;
+        padding-left:20px;
     }
     margin-bottom:40px;
 }
