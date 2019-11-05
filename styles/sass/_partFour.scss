@@ -69,11 +69,17 @@
     .smallImageLeftHalf img {
         width:230px;
     }
+
+    .blackButton {
+        font-size:22.4px;
+        line-height:40px;
+        padding:6px 20px;
+    }
 }
 
 @media (max-width:932px) {
     .partFourTextSection {
-        width:90%;
+        // width:90%;
     }
 
     .partFour {
@@ -81,7 +87,7 @@
     }
 
     .partFour .wrapper {
-        width:100%;
+        width:90%;
     }
  
     .smallImageLeftHalf {
@@ -102,6 +108,19 @@
         p {
         margin-bottom:30px;
         }
+        .blackButton {
+            margin-bottom:10px;
+            display:inline-block;
+            // margin-left:auto;
+            // margin-right:auto;
+        }
     }
+
+    .partFourButton {
+        text-align:center;
+        margin:0 auto;
+    }
+
+
 
 }

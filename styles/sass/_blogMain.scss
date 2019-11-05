@@ -8,6 +8,8 @@
     border-bottom:5px solid #FFD300;
     padding: 0px 0 50px 10px;
     margin-right:0;
+    position: relative;
+    top:-65px;
     h2 {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 44px;
@@ -153,17 +155,8 @@ label {
 
 
 @media (max-width:1020px) {
-    .blogImageRight {
-        //   width:100%;
-        top:-380px;
-        // right:0px;
-        // box-shadow:-20px 20px #FFD300 ;
-    }
-
-    .blogImageAndTextPart {
-        // width:calc(76% - 80px);
-        flex-basis: 100%;
-        position: relative;
+    .blogMain {
+        flex-direction: column-reverse;
     }
 
 }
@@ -177,7 +170,7 @@ label {
 
 @media (max-width:480px) {
     .blogImageRight {
-        top:480px;
+        box-shadow:5px 5px #FFD300 ;
     }
 
 }

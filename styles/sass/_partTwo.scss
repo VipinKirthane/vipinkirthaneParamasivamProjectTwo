@@ -73,15 +73,20 @@
 }
 
 .partTwoBottom {
-    height:300px;
+    // height:300px;
 }
 
 .partTwoTop .textPartRight {
     justify-content: flex-end;
     margin-left:50px;
     padding-right:160px;
+    align-items: center;;
 }
 
+
+.textPartLeft {
+    align-items:center;
+}
 
 // Media Query
 @media (max-width:1080px) {
@@ -97,7 +102,7 @@
     .imagePartLeft {
         top:-50px;
         img {
-            height:500px;
+            // height:500px;
             object-fit: cover;
         }
     }
@@ -105,7 +110,7 @@
     .imagePartRight {
         bottom:-200px;
         img {
-            height:500px;
+            // height:500px;
             object-fit: cover;
         }
     }
@@ -126,9 +131,7 @@
     }
 
     .yellowButton {
-        margin-left:100px;
-        margin-right:100px;
-        width:50%;
+        line-height:20px;    
         padding:5px auto;
     }
 
@@ -145,7 +148,19 @@
         }
     }
 
+    .partTwo {
+        padding-bottom:0px;
+    }
+
+    .imagePartRight {
+        bottom:0px;
+    }
     .yellowButton {
+        display:block;
+        margin:0;
+        // line-height:0px;
+        // padding:0px;
+        margin-bottom:20px;
         button {
             background-color:#FFD300;
             text-align: center;

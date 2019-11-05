@@ -8,7 +8,7 @@
 .contactMain {
     background-color:#2B331B;
     position:relative;
-    height:450px;
+    // height:450px;
 }
 
 .contactSocialIcons {
@@ -127,10 +127,12 @@ label {
 
 .submitButton {
     height:20px;
+    width:100%;
     button {
         border:none;
-        padding:15px 300px;
+        padding:15px 200px;
         background-color:#FFD300;
+        width:100%;
     }
 }
 
@@ -162,7 +164,6 @@ input[type="email"]::placeholder, input[type="text"]::placeholder {
         }
     }
 
-
     .contactInfoLeft {
         padding-top:260px;
     }
@@ -178,7 +179,7 @@ input[type="email"]::placeholder, input[type="text"]::placeholder {
         right:40px;
         fieldset {
             margin-right:0;
-        }
+        };
     }
     
     .submitButton {

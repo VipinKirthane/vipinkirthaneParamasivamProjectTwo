@@ -525,16 +525,21 @@ nav a:hover::after {
   position: relative;
 }
 
-.partTwoBottom {
-  height: 300px;
-}
-
 .partTwoTop .textPartRight {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-left: 50px;
   padding-right: 160px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.textPartLeft {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1080px) {
@@ -552,7 +557,6 @@ nav a:hover::after {
     top: -50px;
   }
   .imagePartLeft img {
-    height: 500px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -560,7 +564,6 @@ nav a:hover::after {
     bottom: -200px;
   }
   .imagePartRight img {
-    height: 500px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -582,9 +585,7 @@ nav a:hover::after {
     padding-left: 0px;
   }
   .yellowButton {
-    margin-left: 100px;
-    margin-right: 100px;
-    width: 50%;
+    line-height: 20px;
     padding: 5px auto;
   }
   .partTwo .textPartRight,
@@ -593,6 +594,17 @@ nav a:hover::after {
   .partTwo .imagePartRight {
     width: 80%;
     margin: 0 auto;
+  }
+  .partTwo {
+    padding-bottom: 0px;
+  }
+  .imagePartRight {
+    bottom: 0px;
+  }
+  .yellowButton {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
   }
   .yellowButton button {
     background-color: #FFD300;
@@ -655,6 +667,12 @@ nav a:hover::after {
   line-height: 99.8px;
   text-align: center;
   padding-top: 150px;
+}
+
+@media (max-width: 1080px) {
+  .partThreeWin {
+    padding-top: 100px;
+  }
 }
 
 @media (max-width: 760px) {
@@ -735,17 +753,19 @@ nav a:hover::after {
   .smallImageLeftHalf img {
     width: 230px;
   }
+  .blackButton {
+    font-size: 22.4px;
+    line-height: 40px;
+    padding: 6px 20px;
+  }
 }
 
 @media (max-width: 932px) {
-  .partFourTextSection {
-    width: 90%;
-  }
   .partFour {
     height: auto;
   }
   .partFour .wrapper {
-    width: 100%;
+    width: 90%;
   }
   .smallImageLeftHalf {
     display: none;
@@ -763,6 +783,14 @@ nav a:hover::after {
   .partFourHeaderAndPara p {
     margin-bottom: 30px;
   }
+  .partFourHeaderAndPara .blackButton {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .partFourButton {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .copyright {
@@ -777,6 +805,9 @@ nav a:hover::after {
 
 footer {
   background-color: #171B0E;
+}
+
+.footerImagesMainParent {
   padding-top: 50px;
 }
 
@@ -900,6 +931,8 @@ footer {
   border-bottom: 5px solid #FFD300;
   padding: 0px 0 50px 10px;
   margin-right: 0;
+  position: relative;
+  top: -65px;
 }
 
 .blogTextPart h2 {
@@ -1059,19 +1092,18 @@ label {
 }
 
 @media (max-width: 1020px) {
-  .blogImageRight {
-    top: -380px;
-  }
-  .blogImageAndTextPart {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    position: relative;
+  .blogMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
 @media (max-width: 480px) {
   .blogImageRight {
-    top: 480px;
+    -webkit-box-shadow: 5px 5px #FFD300;
+            box-shadow: 5px 5px #FFD300;
   }
 }
 
@@ -1091,8 +1123,8 @@ label {
 
 @media (max-width: 960px) {
   .blogAside {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: none;
+        flex-basis: none;
     /*testing*/
   }
 }
@@ -1107,7 +1139,6 @@ label {
 .contactMain {
   background-color: #2B331B;
   position: relative;
-  height: 450px;
 }
 
 .contactSocialIcons {
@@ -1247,12 +1278,14 @@ label {
 
 .submitButton {
   height: 20px;
+  width: 100%;
 }
 
 .submitButton button {
   border: none;
-  padding: 15px 300px;
+  padding: 15px 200px;
   background-color: #FFD300;
+  width: 100%;
 }
 
 a.submitButton {

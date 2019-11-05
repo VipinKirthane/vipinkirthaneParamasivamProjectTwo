@@ -52,6 +52,12 @@
     padding-top:150px;
 }
 
+@media (max-width: 1080px) {
+    .partThreeWin {
+        padding-top:100px;
+    }
+}
+
 @media (max-width:760px) {
     .partThree p {
         width:100%;
