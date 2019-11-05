@@ -514,11 +514,7 @@ nav a:hover::after {
   line-height: 41.6px;
   background-color: #FFD300;
   padding: 15px 20px;
-}
-
-.yellowButton button {
-  border: none;
-  background-color: #FFD300;
+  color: black;
 }
 
 .partTwoTop,
@@ -542,31 +538,65 @@ nav a:hover::after {
 }
 
 @media (max-width: 1080px) {
+  .partTwoTop, .partTwoBottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .partTwo h3 {
+    padding-top: 0px;
+    text-align: center;
+  }
   .imagePartLeft {
     top: -50px;
+  }
+  .imagePartLeft img {
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .imagePartRight {
     bottom: -200px;
   }
+  .imagePartRight img {
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .partTwoTop .textPartRight {
-    margin-left: 50px;
-    padding-right: 50px;
+    margin-left: 0px;
+    padding-right: 0px;
+  }
+  .textPartLeft, .textPartRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
   }
   .textPartLeft p {
-    padding-left: 50px;
+    padding-left: 0px;
   }
-}
-
-@media (max-width: 1000px) {
-  .imagePartLeft,
-  .imagePartRight,
-  .textPartLeft,
-  .textPartRight {
-    width: 100%;
+  .yellowButton {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 50%;
+    padding: 5px auto;
   }
-  .imagePartRight img,
-  .imagePartLeft img {
-    position: static;
+  .partTwo .textPartRight,
+  .partTwo .textPartLeft,
+  .partTwo .imagePartLeft,
+  .partTwo .imagePartRight {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .yellowButton button {
+    background-color: #FFD300;
+    text-align: center;
   }
 }
 
@@ -746,27 +776,27 @@ nav a:hover::after {
 }
 
 footer {
-  background-color: #2B331B;
+  background-color: #171B0E;
+  padding-top: 50px;
 }
 
 .footerImages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.footerImages img {
-  width: 100%;
-  padding: 0 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-bottom: 40px;
 }
 
-.footerImages .footerImage1 {
-  padding-left: 0;
+.footerImages div {
+  width: calc(100% / 3);
 }
 
-.footerImages .footerImage3 {
-  padding-right: 0;
+.footerImage2 {
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 @media (max-width: 1080px) {
@@ -774,18 +804,13 @@ footer {
     max-width: 1080px;
     width: 90%;
   }
-  .footerImages {
-    display: block;
+  .footerImages div {
+    width: 50%;
   }
   .footerImages img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 100%;
-    padding: 0;
-    padding-bottom: 40px;
-  }
-  .footerImage1 {
-    margin-top: 80px;
+    display: block;
   }
 }
 
@@ -826,12 +851,16 @@ footer {
   color: #FFD300;
 }
 
+.blogHeaderFour h4 {
+  padding-top: 0;
+  font-size: 20px;
+}
+
 .asideTextPart {
   width: 350px;
   background-color: #161A10;
   padding-left: 20px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   margin-left: 30px;
 }
 
@@ -843,7 +872,6 @@ footer {
 }
 
 .asideTextPart h4 {
-  padding-top: 20px;
   font-size: 23px;
 }
 
@@ -851,12 +879,13 @@ footer {
   display: inline-block;
 }
 
-.blogAside img {
-  padding-top: 90px;
+.blogAsideImgDiv img {
+  padding-top: 0px;
   display: block;
-  width: 70%;
-  -webkit-box-shadow: 85px 110px #161A10;
-          box-shadow: 85px 110px #161A10;
+  width: 100%;
+  position: relative;
+  left: -50px;
+  top: -20px;
 }
 
 .blogMain {
@@ -1029,8 +1058,25 @@ label {
   background-color: #2B331B;
 }
 
-.blogListAside ul {
-  list-style-type: square;
+@media (max-width: 1020px) {
+  .blogImageRight {
+    top: -380px;
+  }
+  .blogImageAndTextPart {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    position: relative;
+  }
+}
+
+@media (max-width: 480px) {
+  .blogImageRight {
+    top: 480px;
+  }
+}
+
+.asideTextPart {
+  margin-top: 90px;
 }
 
 .asideTextPart div p {
@@ -1041,6 +1087,14 @@ label {
 .blogAside {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
+}
+
+@media (max-width: 960px) {
+  .blogAside {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    /*testing*/
+  }
 }
 
 .contactHeader {

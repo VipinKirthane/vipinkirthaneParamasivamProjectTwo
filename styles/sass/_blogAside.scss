@@ -1,6 +1,11 @@
 .blogListAside ul {
-    list-style-type: square;
+    // list-style-type: square;
 }
+
+.asideTextPart {
+    margin-top:90px;
+}
+
 
 .asideTextPart div p {
     width:100%;
@@ -10,4 +15,11 @@
 .blogAside { 
     // width:24%; 
     flex-basis: 40%;
+}
+
+
+@media (max-width:960px) {
+    .blogAside {
+        flex-basis:100%; /*testing*/
+    }
 }

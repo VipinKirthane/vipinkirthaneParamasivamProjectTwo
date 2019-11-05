@@ -149,3 +149,35 @@ label {
     border:none;
     background-color:#2B331B;
 }
+
+
+
+@media (max-width:1020px) {
+    .blogImageRight {
+        //   width:100%;
+        top:-380px;
+        // right:0px;
+        // box-shadow:-20px 20px #FFD300 ;
+    }
+
+    .blogImageAndTextPart {
+        // width:calc(76% - 80px);
+        flex-basis: 100%;
+        position: relative;
+    }
+
+}
+
+@media (max-width:1080px) {
+    .blogImageRight {
+
+    }
+
+}
+
+@media (max-width:480px) {
+    .blogImageRight {
+        top:480px;
+    }
+
+}
