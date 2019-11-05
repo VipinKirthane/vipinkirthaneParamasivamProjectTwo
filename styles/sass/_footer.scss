@@ -15,12 +15,38 @@ footer {
 .footerImages {
     display: flex;
     img {
-        padding-bottom:40px;
         width:100%;
+        padding:0 10px;
+        padding-bottom:40px;
     }
 }
 
-.footerImage2 {
-    padding-left:20px;
-    padding-right:20px;
+.footerImages .footerImage1 {
+    padding-left:0;
+}
+
+.footerImages .footerImage3 {
+    padding-right:0;
+}
+
+@media (max-width:1080px) {
+    .wrapper {
+        max-width:1080px;
+        width:90%;
+    }
+
+    .footerImages {
+        display:block;
+    }
+
+    .footerImages img{
+        flex-wrap: wrap;
+        width:100%;
+        padding:0;
+        padding-bottom:40px;
+    }
+
+    .footerImage1 {
+        margin-top:80px;
+    }
 }

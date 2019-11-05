@@ -1,9 +1,9 @@
 .partOne {
-    
     padding-top:150px;
     display: flex;
     flex-wrap:wrap;
-    height:900px;
+    height:600px;
+    padding-bottom:600px;
     .partOneParaOne, 
     .partOneParaTwo, 
     .partOneParaThree, 
@@ -71,8 +71,16 @@
 
 // Media Query Starts
 @media (max-width:1190px) {
+    .partOne {
+       padding-bottom:100px;
+    }
+
+    .partOneSection {
+        padding-bottom:200px;
+    }
+    
     .headerGetInTouch {
-        line-height:50px;
+        font-size:40px;
     }
 }
 
@@ -86,9 +94,6 @@
         line-height:50px;
     }
 
-}
-
-@media (max-width:800px) {
     .partOne {
         height:auto;
         display:block;
@@ -105,6 +110,29 @@
             font-size:40px;
             line-height:50px;
         }
+    }
+
+    .partOneSection {
+        padding-bottom: 0px;
+    }
+
+}
+
+@media (max-width:700px) {
+    .wrapper {
+        max-width:700px;
+        width:95%;
+    }
+
+    .partOneIcons {
+        text-align: center;
+    }
+
+    .headerLocation, 
+    .headerCommunity, 
+    .headerBlog, 
+    .headerGetInTouch {
+        text-align: center;
     }
 }
 

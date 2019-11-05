@@ -1,8 +1,12 @@
 .partThree {
     background-color:#2B331B;
-    img {
+    .bannerImage {
+        background:url(../assets/banner.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
         width:100%;
-        padding-top:150px;
+        height:60vh;
+        margin-top:130px;
     }
     p {
         color:white;
@@ -46,4 +50,20 @@
     line-height:99.8px;
     text-align: center;
     padding-top:150px;
+}
+
+@media (max-width:760px) {
+    .partThree p {
+        width:100%;
+        padding-left:0;
+    }
+
+    .partThreeWin {
+        line-height:50px;
+        padding-bottom:20px;
+    }
+
+    .bannerImage {
+        
+    }
 }
