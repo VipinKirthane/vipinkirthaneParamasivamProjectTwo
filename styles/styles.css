@@ -713,10 +713,6 @@ nav a:hover::after {
           box-shadow: -25px 25px #FFD300;
 }
 
-.partFourTextSection {
-  width: 80%;
-}
-
 .partFourImageAndText {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,7 +756,6 @@ nav a:hover::after {
   .blackButton {
     font-size: 22.4px;
     line-height: 40px;
-    padding: 6px 20px;
   }
 }
 
@@ -834,6 +829,7 @@ footer {
 
 .footerImages img {
   max-width: 100%;
+  width: 100%;
 }
 
 .footerImages div {
