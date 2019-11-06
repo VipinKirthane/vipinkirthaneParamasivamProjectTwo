@@ -801,6 +801,7 @@ nav a:hover::after {
   font-size: 20px;
   letter-spacing: 1px;
   padding: 10px 0;
+  width: 100%;
 }
 
 footer {
@@ -815,33 +816,38 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 40px;
 }
 
-.footerImages div {
-  width: calc(100% / 3);
+.footerImages img {
+  max-width: 100%;
 }
 
-.footerImage2 {
-  margin-left: 30px;
-  margin-right: 30px;
+.footerImages div {
+  width: calc((100% / 3));
+}
+
+.footerImage {
+  padding: 0 20px 20px;
 }
 
 @media (max-width: 1080px) {
-  .wrapper {
-    max-width: 1080px;
-    width: 90%;
-  }
   .footerImages div {
-    width: 50%;
+    width: calc((100% / 2) - 40px);
   }
-  .footerImages img {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    display: block;
+}
+
+@media (max-width: 800px) {
+  .footerImages div {
+    width: 100%;
   }
 }
 
@@ -1016,7 +1022,6 @@ footer {
 }
 
 .blogContactFormRight {
-  height: 400px;
   background-color: #2B331B;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1091,6 +1096,36 @@ label {
   background-color: #2B331B;
 }
 
+@media (max-width: 1260px) {
+  .blogHeader h1 {
+    font-size: 69px;
+  }
+}
+
+@media (max-width: 1222px) {
+  .blogContactFormRight {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blogContactFormRight fieldset {
+    width: 50%;
+    margin-right: 0;
+  }
+  .blogContactNameAndEmail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogContactNameAndEmail .inputName, .blogContactNameAndEmail .inputEmail {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1020px) {
   .blogMain {
     -webkit-box-orient: vertical;
@@ -1098,12 +1133,75 @@ label {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .blogTextPart h2 {
+    margin-top: 50px;
+    line-height: 70px;
+  }
+  .asideTextPart {
+    width: 80%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10%;
+  }
+  .blogAsideImgDiv img {
+    left: 25%;
+    right: 0%;
+    top: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .asideTextPart {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10%;
+  }
+  .blogAsideImgDiv img {
+    left: 0%;
+    right: 0%;
+    top: 0px;
+  }
+}
+
+@media (max-width: 650px) {
+  .blogCommentFull1, .blogCommentFull2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profilePic1, .profilePic2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .profilePic1 img, .profilePic2 img {
+    margin-bottom: 20px;
+  }
+  .blogComment h2 {
+    text-align: center;
+  }
+  .blogContactFormRight fieldset {
+    width: 90%;
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 480px) {
   .blogImageRight {
-    -webkit-box-shadow: 5px 5px #FFD300;
-            box-shadow: 5px 5px #FFD300;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+@media (max-width: 452px) {
+  .blogTextPart h2 {
+    font-size: 35px;
   }
 }
 
@@ -1354,6 +1452,27 @@ input[type="email"]::placeholder, input[type="text"]::placeholder {
   }
   .contactInfoLeft {
     padding-top: 300px;
+  }
+}
+
+@media (max-width: 690px) {
+  .contactNameAndEmail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactNameAndEmail .contactNameInput, .contactNameAndEmail .contactEmailInput {
+    width: 100%;
+  }
+  .submitButton {
+    padding: 15px auto;
+  }
+  .asideAndSection {
+    padding-top: 50px;
   }
 }
 

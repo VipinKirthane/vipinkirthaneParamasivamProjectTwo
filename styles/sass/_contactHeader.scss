@@ -192,3 +192,21 @@ input[type="email"]::placeholder, input[type="text"]::placeholder {
         padding-top:300px;
     }
 }
+
+@media (max-width:690px) {
+    .contactNameAndEmail {
+        display:flex;
+        flex-direction: column;
+        .contactNameInput,.contactEmailInput {
+            width:100%;
+        }
+    }
+
+    .submitButton {
+        padding:15px auto;
+    }
+
+    .asideAndSection {
+        padding-top:50px;
+    }
+}
