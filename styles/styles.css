@@ -543,7 +543,8 @@ nav a:hover::after {
 }
 
 @media (max-width: 1080px) {
-  .partTwoTop, .partTwoBottom {
+  .partTwoTop,
+  .partTwoBottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -571,7 +572,8 @@ nav a:hover::after {
     margin-left: 0px;
     padding-right: 0px;
   }
-  .textPartLeft, .textPartRight {
+  .textPartLeft,
+  .textPartRight {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -650,12 +652,14 @@ nav a:hover::after {
   color: white;
 }
 
-.partThree .blackButton, .partFour .blackButton {
+.partThree .blackButton,
+.partFour .blackButton {
   margin-left: 0;
   margin: 0 auto;
 }
 
-.partThreeButton, .partFourButton {
+.partThreeButton,
+.partFourButton {
   text-align: center;
 }
 
@@ -774,7 +778,8 @@ nav a:hover::after {
     padding-top: 100px;
     text-align: center;
   }
-  .partFourTextSection h2, .partFourImageAndText p {
+  .partFourTextSection h2,
+  .partFourImageAndText p {
     width: 100%;
   }
   .partFourHeaderAndPara {
@@ -1068,6 +1073,8 @@ label {
   border: 2px solid #FFD300;
   background-color: #2B331B;
   color: white;
+  padding-bottom: 120px;
+  padding-left: 20px;
 }
 
 .blogContactNameAndEmail {
@@ -1089,6 +1096,11 @@ label {
   width: 100%;
   background-color: #FFD300;
   display: block;
+}
+
+.postCommentButton button:hover {
+  color: #FFD300;
+  background: black;
 }
 
 .blogContactFormRight fieldset {
@@ -1121,7 +1133,8 @@ label {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .blogContactNameAndEmail .inputName, .blogContactNameAndEmail .inputEmail {
+  .blogContactNameAndEmail .inputName,
+  .blogContactNameAndEmail .inputEmail {
     width: 100%;
   }
 }
@@ -1164,7 +1177,8 @@ label {
 }
 
 @media (max-width: 650px) {
-  .blogCommentFull1, .blogCommentFull2 {
+  .blogCommentFull1,
+  .blogCommentFull2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1173,14 +1187,16 @@ label {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .profilePic1, .profilePic2 {
+  .profilePic1,
+  .profilePic2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .profilePic1 img, .profilePic2 img {
+  .profilePic1 img,
+  .profilePic2 img {
     margin-bottom: 20px;
   }
   .blogComment h2 {
@@ -1223,7 +1239,6 @@ label {
   .blogAside {
     -ms-flex-preferred-size: none;
         flex-basis: none;
-    /*testing*/
   }
 }
 
@@ -1251,7 +1266,6 @@ label {
 }
 
 .contactList {
-  /* does this do anything? */
   list-style: none;
   padding-top: 50px;
   width: 40%;
@@ -1298,7 +1312,6 @@ label {
 }
 
 .contactFormRight {
-  height: 400px;
   width: 800px;
   -webkit-box-shadow: 20px 20px #FFD300;
           box-shadow: 20px 20px #FFD300;
@@ -1375,19 +1388,7 @@ label {
 }
 
 .submitButton {
-  height: 20px;
-  width: 100%;
-}
-
-.submitButton button {
-  border: none;
-  padding: 15px 200px;
-  background-color: #FFD300;
-  width: 100%;
-}
-
-a.submitButton {
-  padding-left: 0;
+  padding: 15px 320px;
 }
 
 .contactFormRight fieldset {
@@ -1395,22 +1396,26 @@ a.submitButton {
   background-color: #161A10;
 }
 
-input[type="email"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder {
+input[type="email"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder {
   color: white;
   opacity: 1;
 }
 
-input[type="email"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder {
+input[type="email"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder {
   color: white;
   opacity: 1;
 }
 
-input[type="email"]::-ms-input-placeholder, input[type="text"]::-ms-input-placeholder {
+input[type="email"]::-ms-input-placeholder,
+input[type="text"]::-ms-input-placeholder {
   color: white;
   opacity: 1;
 }
 
-input[type="email"]::placeholder, input[type="text"]::placeholder {
+input[type="email"]::placeholder,
+input[type="text"]::placeholder {
   color: white;
   opacity: 1;
 }
@@ -1442,12 +1447,12 @@ input[type="email"]::placeholder, input[type="text"]::placeholder {
             box-shadow: 10px 10px #FFD300;
     position: absolute;
     top: -160px;
-    right: 40px;
+    right: 30px;
   }
   .contactFormRight fieldset {
     margin-right: 0;
   }
-  .submitButton button {
+  .submitButton {
     padding: 15px 250px;
   }
   .contactInfoLeft {
@@ -1465,7 +1470,8 @@ input[type="email"]::placeholder, input[type="text"]::placeholder {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .contactNameAndEmail .contactNameInput, .contactNameAndEmail .contactEmailInput {
+  .contactNameAndEmail .contactNameInput,
+  .contactNameAndEmail .contactEmailInput {
     width: 100%;
   }
   .submitButton {
@@ -1489,4 +1495,14 @@ input[type="email"]::placeholder, input[type="text"]::placeholder {
 
 p {
   font-family: 'Barlow', sans-serif;
+}
+
+.yellowButton:hover {
+  background: black;
+  color: #FFD300;
+}
+
+.blackButton:hover {
+  background: white;
+  color: black;
 }

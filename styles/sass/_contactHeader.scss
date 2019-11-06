@@ -8,18 +8,17 @@
 .contactMain {
     background-color:#2B331B;
     position:relative;
-    // height:450px;
 }
 
 .contactSocialIcons {
     display:flex;
     list-style:none;
     i {
-        color:#FFD300;
+        color:$yellow;
     }
 }
 
-.contactList {    /* does this do anything? */
+.contactList {   
     list-style: none;
     padding-top:50px;
     width:40%;
@@ -58,9 +57,8 @@
 }
 
 .contactFormRight {
-    height:400px;
     width:800px;
-    box-shadow: 20px 20px #FFD300;
+    box-shadow: 20px 20px $yellow;
     position: absolute;
     top:-130px;
     right:40px;
@@ -82,7 +80,7 @@ label {
         width:290px;
         height:40px;
         border:none;
-        border-bottom: 4px solid #FFD300;
+        border-bottom: 4px solid $yellow;
         background-color:#161A10;
         color:white;
     }
@@ -111,7 +109,7 @@ label {
     input {
         width:100%;
         height:200px;
-        border: 4px solid #FFD300;
+        border: 4px solid $yellow;
         background-color:#161A10;
         color:white;
         padding-bottom:120px;
@@ -126,18 +124,7 @@ label {
 }
 
 .submitButton {
-    height:20px;
-    width:100%;
-    button {
-        border:none;
-        padding:15px 200px;
-        background-color:#FFD300;
-        width:100%;
-    }
-}
-
-a.submitButton {
-    padding-left:0;
+    padding:15px 320px;
 }
 
 .contactFormRight fieldset {
@@ -145,7 +132,8 @@ a.submitButton {
     background-color:#161A10;
 }
 
-input[type="email"]::placeholder, input[type="text"]::placeholder {
+input[type="email"]::placeholder, 
+input[type="text"]::placeholder {
     color:rgb(255,255,255);
     opacity:1;
 }
@@ -154,7 +142,7 @@ input[type="email"]::placeholder, input[type="text"]::placeholder {
     .contactFormRight {
         height:400px;
         width:800px;
-        box-shadow: 10px 10px #FFD300;
+        box-shadow: 10px 10px $yellow;
         position: absolute;
         top:-60px;
         right:40px;
@@ -173,20 +161,18 @@ input[type="email"]::placeholder, input[type="text"]::placeholder {
     .contactFormRight {
         height:400px;
         width:600px;
-        box-shadow: 10px 10px #FFD300;
+        box-shadow: 10px 10px $yellow;
         position: absolute;
         top:-160px;
-        right:40px;
+        right:30px;
         fieldset {
             margin-right:0;
         };
     }
     
     .submitButton {
-        button {
-            padding:15px 250px;
-        }
-    }
+    padding:15px 250px;
+}
 
     .contactInfoLeft {
         padding-top:300px;
@@ -197,7 +183,8 @@ input[type="email"]::placeholder, input[type="text"]::placeholder {
     .contactNameAndEmail {
         display:flex;
         flex-direction: column;
-        .contactNameInput,.contactEmailInput {
+        .contactNameInput,
+        .contactEmailInput {
             width:100%;
         }
     }

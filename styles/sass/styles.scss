@@ -10,10 +10,14 @@
 @import "./blogAside";
 @import "./contactHeader";
 
+$yellow: #FFD300;
+$pine: #2B331B;
+$almostBlack: #171B0E;
+$blackColor:#0F0F0F;
+
 * {
     margin:0;
     padding:0;
-    // border:1px solid crimson;
 }
 
 .wrapper {
@@ -24,4 +28,14 @@
 
 p {
     font-family: 'Barlow', sans-serif;
+}
+
+.yellowButton:hover {
+    background:black;
+    color:$yellow;
+}
+
+.blackButton:hover {
+    background:white;
+    color:black;
 }

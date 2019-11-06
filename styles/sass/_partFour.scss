@@ -1,6 +1,6 @@
 .partFour {
     height:80vh;
-    background-color:#2B331B;
+    background-color:$pine;
     p {
         color:white;
         font-size:20px;
@@ -12,20 +12,13 @@
         width:20%;
         padding-top:150px;
         img {
-            box-shadow: -25px 25px #FFD300;
+            box-shadow: -25px 25px $yellow;
         }
     }
 }
 
 .partFourTextSection {
     width:80%;
-    h2 {
-        // margin-left:15%;
-    }
-    p {
-        // width:70%;
-        // margin-left:20%;
-    }
 }
 
 .partFourImageAndText {
@@ -53,7 +46,6 @@
 @media (max-width: 1200px) {
     .smallImageLeftHalf {
         padding-top:150px;
-        // width:100%;
         img {
             width:250px;
         }
@@ -78,10 +70,6 @@
 }
 
 @media (max-width:932px) {
-    .partFourTextSection {
-        // width:90%;
-    }
-
     .partFour {
         height:auto;
     }
@@ -99,7 +87,8 @@
         text-align: center;
     }
 
-    .partFourTextSection h2, .partFourImageAndText p {
+    .partFourTextSection h2, 
+    .partFourImageAndText p {
         width:100%;
     }
 
@@ -111,8 +100,6 @@
         .blackButton {
             margin-bottom:10px;
             display:inline-block;
-            // margin-left:auto;
-            // margin-right:auto;
         }
     }
 
@@ -120,7 +107,4 @@
         text-align:center;
         margin:0 auto;
     }
-
-
-
 }

@@ -1,5 +1,5 @@
 .partThree {
-    background-color:#2B331B;
+    background-color:$pine;
     .bannerImage {
         background:url(../assets/banner.jpg);
         background-position: center;
@@ -20,7 +20,7 @@
 }
 
 .blackButton {
-    background-color: #0F0F0F; 
+    background-color: $blackColor; 
     font-family: 'Josefin Sans', sans-serif;
     font-size:22.4px;
     text-align: center;
@@ -28,23 +28,25 @@
     padding:15px 20px;
     button {
         border:none;
-        background-color: #0F0F0F; 
+        background-color: $blackColor; 
         color:white;
     }
 }
 
-.partThree .blackButton, .partFour .blackButton {
+.partThree .blackButton, 
+.partFour .blackButton {
     margin-left:0;
     margin:0 auto;
 }
 
-.partThreeButton, .partFourButton  {
+.partThreeButton, 
+.partFourButton  {
     text-align: center;
 }
 
 .partThreeWin, 
 .partFourBringing {
-    color:#FFD300;
+    color:$yellow;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 45px;
     line-height:99.8px;
@@ -67,9 +69,5 @@
     .partThreeWin {
         line-height:50px;
         padding-bottom:20px;
-    }
-
-    .bannerImage {
-        
     }
 }
