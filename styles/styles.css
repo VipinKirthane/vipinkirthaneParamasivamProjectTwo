@@ -183,6 +183,7 @@ header {
   background: url(../assets/home-header.jpg);
   height: 85vh;
   position: relative;
+  background-size: cover;
 }
 
 h1 {
@@ -560,16 +561,16 @@ nav a:hover::after {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .partTwoTop .textPartRight {
+    margin-left: 0px;
+    padding-right: 0px;
+  }
   .imagePartRight {
     bottom: -200px;
   }
   .imagePartRight img {
     -o-object-fit: cover;
        object-fit: cover;
-  }
-  .partTwoTop .textPartRight {
-    margin-left: 0px;
-    padding-right: 0px;
   }
   .textPartLeft,
   .textPartRight {
@@ -589,15 +590,15 @@ nav a:hover::after {
     line-height: 20px;
     padding: 5px auto;
   }
+  .partTwo {
+    padding-bottom: 0px;
+  }
   .partTwo .textPartRight,
   .partTwo .textPartLeft,
   .partTwo .imagePartLeft,
   .partTwo .imagePartRight {
     width: 80%;
     margin: 0 auto;
-  }
-  .partTwo {
-    padding-bottom: 0px;
   }
   .imagePartRight {
     bottom: 0px;
@@ -620,7 +621,7 @@ nav a:hover::after {
 .partThree .bannerImage {
   background: url(../assets/banner.jpg);
   background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 60vh;
   margin-top: 130px;
@@ -858,6 +859,7 @@ footer {
 .blogHeader {
   background: url(../assets/blog-header.jpg);
   height: 80vh;
+  background-size: cover;
 }
 
 .blogList {
@@ -1248,6 +1250,7 @@ label {
   background: url(../assets/contact-header.jpg);
   height: 70vh;
   position: relative;
+  background-size: cover;
 }
 
 .contactMain {

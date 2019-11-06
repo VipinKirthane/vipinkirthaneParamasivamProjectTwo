@@ -102,16 +102,16 @@
         }
     }
 
+    .partTwoTop .textPartRight {
+    margin-left:0px;
+    padding-right:0px;
+    }
+
     .imagePartRight {
         bottom:-200px;
         img {
             object-fit: cover;
         }
-    }
-
-    .partTwoTop .textPartRight {
-    margin-left:0px;
-    padding-right:0px;
     }
 
     .textPartLeft, 
@@ -131,6 +131,7 @@
     }
 
     .partTwo {
+        padding-bottom:0px;
         .textPartRight, 
         .textPartLeft, 
         .imagePartLeft, 
@@ -140,13 +141,10 @@
         }
     }
 
-    .partTwo {
-        padding-bottom:0px;
-    }
-
     .imagePartRight {
         bottom:0px;
     }
+
     .yellowButton {
         display:block;
         margin:0;
