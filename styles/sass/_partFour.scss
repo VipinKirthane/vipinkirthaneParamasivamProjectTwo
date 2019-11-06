@@ -42,7 +42,7 @@
     padding-left:20px;
 }
 
-
+// Media Query Start
 @media (max-width: 1200px) {
     .smallImageLeftHalf {
         padding-top:150px;
@@ -95,7 +95,7 @@
     .partFourHeaderAndPara {
         padding-left:10px;
         p {
-        margin-bottom:30px;
+            margin-bottom:30px;
         }
         .blackButton {
             margin-bottom:10px;
@@ -108,3 +108,4 @@
         margin:0 auto;
     }
 }
+// Media Query End

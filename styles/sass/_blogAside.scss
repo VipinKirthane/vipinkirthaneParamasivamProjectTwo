@@ -1,19 +1,20 @@
 .asideTextPart {
     margin-top:90px;
-}
-
-
-.asideTextPart div p {
-    width:100%;
-    display: inline-block;
+    div p{
+        width:100%;
+        display: inline-block;
+    }
 }
 
 .blogAside { 
     flex-basis: 40%;
 }
 
+// Media Query Start
 @media (max-width:960px) {
     .blogAside {
         flex-basis:none;
     }
 }
+
+// Media Query End

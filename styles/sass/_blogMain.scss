@@ -148,6 +148,8 @@ label {
     background-color:$pine;
 }
 
+
+// Media Query Starts
 @media (max-width:1260px) {
     .blogHeader h1 {
         font-size:69px;
@@ -212,7 +214,6 @@ label {
 }
 
 @media (max-width: 650px) {
-    
     .blogCommentFull1, 
     .blogCommentFull2 {
         display: flex;
@@ -224,12 +225,15 @@ label {
         display: flex;
         justify-content: space-around;
         img {
-        margin-bottom:20px;
+            margin-bottom:20px;
         }
     }
 
-    .blogComment h2 {
-        text-align: center;
+    .blogComment {
+        padding-top: 20px;
+        h2 {
+            text-align: center;
+       }
     }
 
     .blogContactFormRight {
@@ -241,11 +245,9 @@ label {
 }
 
 @media (max-width:480px) {
-    
     .blogImageRight {
         box-shadow:none;
     }
-
 }
 
 @media (max-width:452px) {
@@ -253,4 +255,4 @@ label {
         font-size:35px;
     }
 }
-
+// Media Query End

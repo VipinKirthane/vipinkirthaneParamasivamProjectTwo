@@ -181,7 +181,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 header {
   background: url(../assets/home-header.jpg);
-  background-repeat: none;
   height: 85vh;
   position: relative;
 }
@@ -1199,6 +1198,9 @@ label {
   .profilePic2 img {
     margin-bottom: 20px;
   }
+  .blogComment {
+    padding-top: 20px;
+  }
   .blogComment h2 {
     text-align: center;
   }
@@ -1244,7 +1246,6 @@ label {
 
 .contactHeader {
   background: url(../assets/contact-header.jpg);
-  background-repeat: none;
   height: 70vh;
   position: relative;
 }
@@ -1283,6 +1284,7 @@ label {
 
 .contactInfoLeft {
   padding-top: 120px;
+  padding-bottom: 100px;
 }
 
 .asideAndSection {
@@ -1295,10 +1297,7 @@ label {
   color: black;
 }
 
-.contactInfoList {
-  list-style: none;
-}
-
+.contactInfoList,
 .socialIcons {
   list-style: none;
 }
@@ -1461,6 +1460,12 @@ input[type="text"]::placeholder {
 }
 
 @media (max-width: 690px) {
+  .contactHeader {
+    height: 80vh;
+  }
+  .contactHeader h1 {
+    line-height: 80px;
+  }
   .contactNameAndEmail {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1505,4 +1510,22 @@ p {
 .blackButton:hover {
   background: white;
   color: black;
+}
+
+.burger-menu {
+  visibility: hidden;
+}
+
+@media (max-width: 480px) {
+  .contactHeader nav ul, .blogHeader nav ul {
+    visibility: hidden;
+  }
+  .burger-menu {
+    position: absolute;
+    top: 55px;
+    right: 35px;
+    font-size: 2.5rem;
+    visibility: visible;
+    color: white;
+  }
 }

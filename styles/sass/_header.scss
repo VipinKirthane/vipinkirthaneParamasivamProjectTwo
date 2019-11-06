@@ -1,3 +1,4 @@
+// Color variables
 $yellow: #FFD300;
 $pine: #2B331B;
 $almostBlack: #171B0E;
@@ -5,7 +6,6 @@ $blackColor:#0F0F0F;
 
 header {
     background:url(../assets/home-header.jpg);
-    background-repeat: none;
     height:85vh;
     position: relative;
 }
@@ -119,3 +119,4 @@ nav a:hover::after {
         visibility: hidden;
     }
 }
+// Media Query End

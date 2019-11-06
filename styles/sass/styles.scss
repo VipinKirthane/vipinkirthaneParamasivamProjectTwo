@@ -8,7 +8,7 @@
 @import "./blogHeader";
 @import "./blogMain";
 @import "./blogAside";
-@import "./contactHeader";
+@import "./contact";
 
 $yellow: #FFD300;
 $pine: #2B331B;
@@ -38,4 +38,23 @@ p {
 .blackButton:hover {
     background:white;
     color:black;
+}
+
+.burger-menu {
+    visibility: hidden;
+}
+
+@media (max-width:480px) {
+    .contactHeader nav ul, .blogHeader nav ul{
+        visibility: hidden;
+    }
+
+    .burger-menu {
+        position:absolute;
+        top:55px;
+        right:35px;
+        font-size:2.5rem;
+        visibility:visible;
+        color:white;
+    }
 }

@@ -1,12 +1,11 @@
 .contactHeader {
     background:url(../assets/contact-header.jpg);
-    background-repeat: none;
     height:70vh;
     position: relative;
 }
 
 .contactMain {
-    background-color:#2B331B;
+    background-color:$pine;
     position:relative;
 }
 
@@ -31,6 +30,7 @@
 
 .contactInfoLeft {
     padding-top:120px;
+    padding-bottom:100px;
 }
 
 .asideAndSection {
@@ -41,12 +41,12 @@
     color:black;
 }
 
-.contactInfoList {
+.contactInfoList,
+.socialIcons {
     list-style: none;
 }
 
 .socialIcons {
-    list-style:none;
     li:first-child {
         padding-left:10px;
     }
@@ -138,6 +138,8 @@ input[type="text"]::placeholder {
     opacity:1;
 }
 
+ 
+// Media Query Starts
 @media (max-width:1260px) {
     .contactFormRight {
         height:400px;
@@ -171,7 +173,7 @@ input[type="text"]::placeholder {
     }
     
     .submitButton {
-    padding:15px 250px;
+        padding:15px 250px;
 }
 
     .contactInfoLeft {
@@ -180,6 +182,12 @@ input[type="text"]::placeholder {
 }
 
 @media (max-width:690px) {
+    .contactHeader {
+        height:80vh;
+        h1 {
+            line-height:80px;
+        }
+    }   
     .contactNameAndEmail {
         display:flex;
         flex-direction: column;
@@ -197,3 +205,4 @@ input[type="text"]::placeholder {
         padding-top:50px;
     }
 }
+// Media Query End

@@ -83,7 +83,7 @@
     align-items:center;
 }
 
-// Media Query
+// Media Query Start
 @media (max-width:1080px) {
     .partTwoTop,
     .partTwoBottom {
@@ -138,7 +138,6 @@
             width:80%;
             margin:0 auto;
         }
-
     }
 
     .partTwo {
@@ -158,3 +157,4 @@
         }
     }
 }
+// Media Query End

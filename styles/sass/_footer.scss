@@ -36,6 +36,8 @@ footer {
     padding:0 20px 20px;
 }
 
+
+// Media Query Starts
 @media (max-width:1080px) {
     .footerImages div {
         width: calc((100% / 2) - 40px);
@@ -47,3 +49,5 @@ footer {
         width:100%;
     }
 }
+
+// Media Query End
